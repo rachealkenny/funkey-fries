@@ -1,2 +1,1 @@
-# funkey-fries-private
-This is the private repo for funkey fries
+Funkey Fries is a Stellar blockchain-powered quick service restaurant franchise combining gourmet pastries with fast food efficiency. We deliver blockchain-verified supply chain transparency, instant loyalty rewards, and seamless cross-border payments for franchisees.
