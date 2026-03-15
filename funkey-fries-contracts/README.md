@@ -1,3 +1,42 @@
+# funkey-fries-contracts
+
+![Rust](https://img.shields.io/badge/Rust-Cargo-8A2BE2)
+![Soroban](https://img.shields.io/badge/Soroban-Stellar-yellowgreen)
+
+Smart contracts and on-chain code used by Funkey Fries. Contracts implement loyalty tokens, payment escrow, and any on-chain business rules (Stellar/Soroban targets).
+
+Key responsibilities
+
+- `FRIES` loyalty token contract
+- Payment escrow and settlement contracts
+- Supply-chain / verification modules (optional)
+- Tests and deployment scripts
+
+Quick start
+
+Prerequisites: Rust toolchain (stable), `cargo`, Soroban/Soroban CLI (if required), and network config
+
+```bash
+cd funkey-fries-contracts
+# build contracts
+cargo build --release
+
+# run unit/integration tests
+cargo test
+
+# follow package-specific scripts for deployment (see scripts/)
+```
+
+Important paths
+
+- `contracts/` — individual contract crates
+- `scripts/` — deploy & interaction helpers
+- `tests/` — integration tests
+
+Notes
+
+- Contracts are designed to run on the Stellar network (Soroban). Follow the `scripts/` folder for deployment steps and the `stellar.toml` for configuration.
+- Keep private keys and deployment credentials out of source control.
 # Soroban Project
 
 ## Project Structure
