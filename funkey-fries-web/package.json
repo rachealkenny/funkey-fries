@@ -2,9 +2,11 @@
   "name": "funkey-fries-web",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
     "start": "next start"
   },
   "dependencies": {
@@ -18,6 +20,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+     "vitest": "^1"
   }
 }
