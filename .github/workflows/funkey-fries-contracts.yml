@@ -1,0 +1,38 @@
+name: Funkey Fries Contracts CI
+on:
+  push:
+    paths:
+      - 'funkey-fries-contracts/**'
+  pull_request:
+    paths:
+      - 'funkey-fries-contracts/**'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: funkey-fries-contracts
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Verify Rust project
+        run: |
+          if [ ! -f "Cargo.toml" ]; then
+            echo "Γ¥î ERROR: No Cargo.toml file found"
+            exit 1
+          fi
+          echo "Γ£à Rust project verified"
+
+      - name: Check
+        run: cargo check --verbose
+        continue-on-error: false
+
+      - name: Test
+        run: cargo test --verbose
