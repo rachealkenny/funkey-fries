@@ -1,0 +1,2 @@
+// placeholder mongodb index
+export {};

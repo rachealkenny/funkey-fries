@@ -1,0 +1,2 @@
+// placeholder Postgres model
+export {};
