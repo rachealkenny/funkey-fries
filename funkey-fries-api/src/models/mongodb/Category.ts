@@ -1,0 +1,2 @@
+// placeholder Mongoose model
+export {};
