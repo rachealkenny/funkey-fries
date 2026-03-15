@@ -1,3 +1,51 @@
+# funkey-fries-web
+
+![Next.js](https://img.shields.io/badge/Next.js-14+-black)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-sky)
+![React Query](https://img.shields.io/badge/React%20Query-Server%20State-orange)
+
+Customer-facing web application and admin routes. Built with Next.js (App Router), Server and Client components, and Tailwind CSS.
+
+Key responsibilities
+
+- Public marketing pages and landing
+- Menu browsing and product pages
+- Cart & checkout UI
+- Admin routes for franchise management, inventory, analytics
+- API client wrappers and auth middleware
+
+Quick start
+
+```bash
+cd funkey-fries-web
+npm install
+cp .env.example .env
+npm run dev
+```
+
+Environment
+
+- `NEXT_PUBLIC_API_URL` — backend API base URL
+- `NEXTAUTH_URL` — for next-auth if used
+
+Important paths
+
+- `src/app` — App Router routes and layouts
+- `src/components` — UI + feature components
+- `src/lib/api` — API client and endpoints
+- `src/hooks` — reusable React hooks
+- `src/styles` — global styles and tailwind config
+
+Testing & build
+
+- `npm run test` — unit tests
+- `npm run build` — production build
+- `npm run start` — start production server
+
+Notes
+
+- Use Server Components for static menu pages and Client Components for interactive flows (cart, checkout).
+- Keep environment secrets out of the repo; use `.env.local` for local overrides.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
