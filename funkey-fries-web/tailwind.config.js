@@ -14,6 +14,10 @@ module.exports = {
           soft: '#FFF3E6',
           deep: '#2B2D42',
           warm: '#FFF8F0',
+          success: '#10B981',
+          error: '#EF4444',
+          warning: '#F59E0B',
+          neutral: '#6B7280',
         },
       },
       fontFamily: {
