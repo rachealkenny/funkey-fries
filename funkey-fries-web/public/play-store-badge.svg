@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48">
+  <rect width="160" height="48" rx="10" fill="#fff" stroke="#E5E7EB"/>
+  <g transform="translate(12,8)">
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="#34D399"/>
+    <text x="36" y="18" font-family="Inter, Arial" font-size="12" fill="#111827">Get it on</text>
+    <text x="36" y="34" font-family="Fredoka, Arial" font-size="16" font-weight="700" fill="#111827">Google Play</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48">
+  <rect width="160" height="48" rx="10" fill="#111827" />
+  <g transform="translate(12,8)">
+    <circle cx="12" cy="12" r="12" fill="#fff"/>
+    <text x="36" y="18" font-family="Inter, Arial" font-size="12" fill="#fff">Download on the</text>
+    <text x="36" y="34" font-family="Fredoka, Arial" font-size="16" font-weight="700" fill="#fff">App Store</text>
+  </g>
+</svg>

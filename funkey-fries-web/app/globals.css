@@ -1,27 +1,90 @@
-/* Global styles placeholder */
+/* Funkey Fries — Global Styles */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-primary: #FF6B35;
+  --color-brand-secondary: #FFD166;
+  --color-brand-accent: #4CC9F0;
+  --color-brand-soft: #FFF3E6;
+  --color-brand-deep: #2B2D42;
+  --color-brand-warm: #FFF8F0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FFF8F0;
+  color: #1f2937;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Playful card */
+.card-playful {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(43, 45, 66, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-playful:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.15);
+}
+
+/* Gradient text helper */
+.text-gradient {
+  background: linear-gradient(135deg, #FF6B35 0%, #FFD166 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero image overlay */
+.hero-overlay {
+  position: relative;
+}
+.hero-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, transparent 50%, rgba(43,45,66,0.3) 100%);
+  pointer-events: none;
+}
+
+/* Smooth image cards */
+.img-card {
+  overflow: hidden;
+  border-radius: 16px;
+}
+.img-card img {
+  transition: transform 0.4s ease;
+}
+.img-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Badge pill */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Wavy section divider */
+.wave-divider {
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 60px;
 }
