@@ -1,1 +1,1 @@
-export type Menu = { items?: unknown }
+export type { MenuCategory, MenuProduct } from '@/types/menu'
