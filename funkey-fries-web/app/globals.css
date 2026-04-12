@@ -8,6 +8,10 @@
   --color-brand-soft: #FFF3E6;
   --color-brand-deep: #2B2D42;
   --color-brand-warm: #FFF8F0;
+  --color-brand-success: #10B981;
+  --color-brand-error: #EF4444;
+  --color-brand-warning: #F59E0B;
+  --color-brand-neutral: #6B7280;
 }
 
 html {
